@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_shade_1"
+    tools:context=".AddEditMountActivity">
+
+    <!--button for saving and updating a mount-->
+    <Button
+        android:id="@+id/idBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/custom_button_back"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    <!-- BAL -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/idEdtVaultName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Enter name of vault"
+            android:textColor="@color/blue_light"
+            android:textColorHint="@color/blue_dark"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/idEdtEncDir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Enter encrypted directory"
+            android:textColor="@color/blue_light"
+            android:textColorHint="@color/blue_dark" />
+
+        <TextView
+            android:id="@+id/idEdtClearDir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="0dp"
+            android:hint="Enter clear directory"
+            android:textColor="@color/blue_light"
+            android:textColorHint="@color/blue_dark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_options"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:src="@drawable/password" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/strPassword"
+                android:padding="4dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:background="@color/blue_light"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:singleLine="true" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnMount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/blue_dark"
+            android:onClick="clickMount"
+            android:paddingStart="34dp"
+            android:paddingEnd="34dp"
+            android:text="@string/btnMount"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnuMount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/blue_dark"
+            android:onClick="clickuMount"
+            android:paddingStart="34dp"
+            android:paddingEnd="34dp"
+            android:text="@string/btnuMount"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textOut"
+            android:layout_width="match_parent"
+            android:layout_height="187dp"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+    </LinearLayout>
+
+</RelativeLayout>

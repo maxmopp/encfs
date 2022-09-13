@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">encfs</string>
+    <string name="encfs">ENCfs vault parameter</string>
+
+    <string name="btnSave">save(update) exit</string>
+    <string name="btnMount">mount</string>
+    <string name="btnuMount">umount</string>
+    <string name="strOk">OK</string>
+    <string name="strCancel">Cancel</string>
+    <string name="strPassword">Password</string>
+    <string name="strYesNo">Delete</string>
+    <string name="strYesNoMsg">Do you really want to delete this vault?</string>
+
+</resources>
